@@ -4,10 +4,15 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using WindowsInput;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterEntity : BaseNetworkGameCharacter
 {
+
+
+    InputSimulator IS;
+
     public const float DISCONNECT_WHEN_NOT_RESPAWN_DURATION = 60;
     public const byte RPC_EFFECT_DAMAGE_SPAWN = 0;
     public const byte RPC_EFFECT_DAMAGE_HIT = 1;
@@ -144,14 +149,15 @@ public class CharacterEntity : BaseNetworkGameCharacter
     [SyncVar]
     public string extra;
 
-    [HideInInspector]
+    //[HideInInspector]
     public int rank = 0;
 
     public override bool IsDead
     {
         get { return hp <= 0; }
     }
-    
+
+
     public System.Action onDead;
     public readonly HashSet<PickupEntity> PickableEntities = new HashSet<PickupEntity>();
     public SyncListEquippedWeapon equippedWeapons = new SyncListEquippedWeapon();
@@ -176,6 +182,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
     public float reloadDuration { get; private set; }
     public bool isReady { get; private set; }
     public bool isDead { get; private set; }
+
     public bool isGround { get; private set; }
     public bool isPlayingAttackAnim { get; private set; }
     public bool isReloading { get; private set; }
@@ -390,6 +397,10 @@ public class CharacterEntity : BaseNetworkGameCharacter
         get { return GameplayManager.Singleton.GetKillScore(level); }
     }
 
+    private void Start()
+    {
+        IS = new InputSimulator();
+    }
     private void Awake()
     {
         gameObject.layer = GameInstance.Singleton.characterLayer;
@@ -835,6 +846,11 @@ public class CharacterEntity : BaseNetworkGameCharacter
     public void KnockBack()
     {
         print("hit");
+        IS.Keyboard.KeyDown(WindowsInput.Native.VirtualKeyCode.LSHIFT);
+
+
+
+
         /*Vector3 direction = transform.position - transform.position;
         direction.y = 0;
         tempRigidbody.AddForce(direction.normalized * 100, ForceMode.Impulse);

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using WindowsInput;
+
 
 public static class InputManager
 {
