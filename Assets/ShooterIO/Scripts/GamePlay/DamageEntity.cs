@@ -156,6 +156,7 @@ public class DamageEntity : MonoBehaviour
                 continue;
 
             hitSomeAliveCharacter = true;
+            
             ApplyDamage(target);
         }
         // If hit character (So it will not wall) but not hit alive character, don't destroy, let's find another target.
@@ -178,6 +179,8 @@ public class DamageEntity : MonoBehaviour
         // Damage receiving calculation on server only
         if (NetworkServer.active)
         {
+            var gameplayManager = GameplayManager.Singleton;
+            target.KnockBack();
             /*
             var gameplayManager = GameplayManager.Singleton;
             float damage = weaponDamage * Attacker.TotalWeaponDamageRate;

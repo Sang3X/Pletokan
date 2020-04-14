@@ -674,6 +674,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
         if(coll.gameObject.tag == "Zone1")
         {
             TambahScoreZona();
+            //print(zoneScore);
         }
     }
 
@@ -831,6 +832,15 @@ public class CharacterEntity : BaseNetworkGameCharacter
     }
 
     [Server]
+    public void KnockBack()
+    {
+        print("hit");
+        /*Vector3 direction = transform.position - transform.position;
+        direction.y = 0;
+        tempRigidbody.AddForce(direction.normalized * 100, ForceMode.Impulse);
+        */
+        isDashing = true;
+    }
     public void ReceiveDamage(CharacterEntity attacker, int damage)
     {
         var gameplayManager = GameplayManager.Singleton;

@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E35EC63B-9789-737B-6956-82D8F73F30EA}</ProjectGuid>
+    <ProjectGuid>{E4714626-3887-2215-30C7-33DCF4155BDE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -127,6 +127,7 @@
     <Compile Include="Assets\ShooterIO\Scripts\GamePlay\EffectEntity.cs" />
     <Compile Include="Assets\ShooterIO\Scripts\GamePlay\EquippedWeapon.cs" />
     <Compile Include="Assets\ShooterIO\Scripts\GamePlay\GameplayManager.cs" />
+    <Compile Include="Assets\ShooterIO\Scripts\GamePlay\KnockBack.cs" />
     <Compile Include="Assets\ShooterIO\Scripts\GamePlay\PickupEntity.cs" />
     <Compile Include="Assets\ShooterIO\Scripts\GamePlay\PickupSpawnData.cs" />
     <Compile Include="Assets\ShooterIO\Scripts\GamePlay\PowerUpEntity.cs" />
@@ -199,40 +200,40 @@
     <None Include="Assets\ShooterIO\Demo\Fonts\upheaval.txt" />
     <None Include="Assets\ShooterIO\ThirdPartyNotices.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>D:/Project Game/Template Multiplayer/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>D:/Project Game/Pletokan/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
