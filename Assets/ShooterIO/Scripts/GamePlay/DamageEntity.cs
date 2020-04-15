@@ -179,14 +179,14 @@ public class DamageEntity : MonoBehaviour
         // Damage receiving calculation on server only
         if (NetworkServer.active)
         {
-            var gameplayManager = GameplayManager.Singleton;
-            target.KnockBack();
-            /*
+            //var gameplayManager = GameplayManager.Singleton;
+            //target.KnockBack();
+            
             var gameplayManager = GameplayManager.Singleton;
             float damage = weaponDamage * Attacker.TotalWeaponDamageRate;
             damage += (Random.Range(gameplayManager.minAttackVaryRate, gameplayManager.maxAttackVaryRate) * damage);
             target.ReceiveDamage(Attacker, Mathf.CeilToInt(damage));
-            */
+            
         }
     }
 

@@ -1529,6 +1529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114749709587979546, guid: acbde4027868d76429191bb624204e61,
         type: 3}
+      propertyPath: pickups.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114749709587979546, guid: acbde4027868d76429191bb624204e61,
+        type: 3}
       propertyPath: characterSpawnAreas.Array.data[0]
       value: 
       objectReference: {fileID: 2044769845}
@@ -1542,6 +1547,18 @@ PrefabInstance:
       propertyPath: pickupSpawnAreas.Array.data[0]
       value: 
       objectReference: {fileID: 1844300463}
+    - target: {fileID: 114749709587979546, guid: acbde4027868d76429191bb624204e61,
+        type: 3}
+      propertyPath: pickups.Array.data[0].pickupPrefab
+      value: 
+      objectReference: {fileID: 114891055892155078, guid: b6796fadae9e75f49afdde96b69bda0e,
+        type: 3}
+    - target: {fileID: 114749709587979546, guid: acbde4027868d76429191bb624204e61,
+        type: 3}
+      propertyPath: pickups.Array.data[1].pickupPrefab
+      value: 
+      objectReference: {fileID: 114699066889544504, guid: 6ecda3ce58d56ab43ab7ca6f36e467ec,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acbde4027868d76429191bb624204e61, type: 3}
 --- !u!1001 &1109562601
