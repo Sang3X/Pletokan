@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -869,6 +869,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
         type: 3}
+      propertyPath: bots.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[3].weaponDataIndexes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[4].weaponDataIndexes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[5].weaponDataIndexes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[6].weaponDataIndexes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
       propertyPath: characters.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: ba264c485308a8348b74d0cb89704463,
@@ -891,6 +916,126 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 9a458a54bbcd4e24a838fa3adce48c11,
         type: 2}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[0].name
+      value: JAKA
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[3].name
+      value: RIDHA
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[3].headDataIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[3].characterDataIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[3].weaponDataIndexes.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[3].weaponDataIndexes.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[4].name
+      value: RAHMAN
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[4].headDataIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[4].characterDataIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[4].weaponDataIndexes.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[4].weaponDataIndexes.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[5].name
+      value: INI BOT
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[5].headDataIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[5].characterDataIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[5].weaponDataIndexes.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[5].weaponDataIndexes.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[6].name
+      value: AFK
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[6].headDataIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[6].characterDataIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[6].weaponDataIndexes.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[6].weaponDataIndexes.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[1].name
+      value: HADI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: bots.Array.data[2].name
+      value: PRAS
+      objectReference: {fileID: 0}
+    - target: {fileID: 114005792904717730, guid: 2d15640ead0885540bec24969aa77192,
+        type: 3}
+      propertyPath: showJoystickInEditor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d15640ead0885540bec24969aa77192, type: 3}
 --- !u!1001 &672923260
@@ -4440,6 +4585,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnlineScene
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114325143524387380, guid: a6531d742d4cd024191b68d82120b6c6,
+        type: 3}
+      propertyPath: m_UseSimulator
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114995362250787648, guid: a6531d742d4cd024191b68d82120b6c6,
+        type: 3}
+      propertyPath: m_ShowGUI
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6531d742d4cd024191b68d82120b6c6, type: 3}

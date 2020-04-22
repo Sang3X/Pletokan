@@ -16,6 +16,7 @@ public struct CharacterStats
     public float addHpRecoveryRate;
     public float addArmorRecoveryRate;
     public float addDamageRateLeechHp;
+    public float addZoneScoreRate;
 
     public static CharacterStats operator +(CharacterStats a, CharacterStats b)
     {
@@ -31,6 +32,7 @@ public struct CharacterStats
         result.addHpRecoveryRate = a.addHpRecoveryRate + b.addHpRecoveryRate;
         result.addArmorRecoveryRate = a.addArmorRecoveryRate + b.addArmorRecoveryRate;
         result.addDamageRateLeechHp = a.addDamageRateLeechHp + b.addDamageRateLeechHp;
+        result.addZoneScoreRate = a.addZoneScoreRate + b.addZoneScoreRate;
         return result;
     }
 
@@ -48,6 +50,7 @@ public struct CharacterStats
         result.addHpRecoveryRate = a.addHpRecoveryRate - b.addHpRecoveryRate;
         result.addArmorRecoveryRate = a.addArmorRecoveryRate - b.addArmorRecoveryRate;
         result.addDamageRateLeechHp = a.addDamageRateLeechHp - b.addDamageRateLeechHp;
+        result.addZoneScoreRate = a.addZoneScoreRate - b.addZoneScoreRate;
         return result;
     }
 }

@@ -17,6 +17,10 @@ public abstract class BaseNetworkGameCharacter : NetworkBehaviour, System.ICompa
     public int assistCount;
     [SyncVar]
     public int dieCount;
+    [SyncVar]
+    public int zoneToInt;
+    [SyncVar]
+    public int fixScore;
 
     public abstract bool IsDead { get; }
     public int Score
@@ -25,7 +29,10 @@ public abstract class BaseNetworkGameCharacter : NetworkBehaviour, System.ICompa
         {
             if (IsDead && NetworkManager != null && NetworkManager.gameRule != null && NetworkManager.gameRule.ShowZeroScoreWhenDead)
                 return 0;
+                //return zoneToInt;
+            //return score;
             return score;
+            //return zoneToInt;
         }
     }
     public int KillCount
@@ -55,6 +62,8 @@ public abstract class BaseNetworkGameCharacter : NetworkBehaviour, System.ICompa
             return dieCount;
         }
     }
+
+
 
     public BaseNetworkGameManager NetworkManager { get; protected set; }
     public void RegisterNetworkGameManager(BaseNetworkGameManager networkManager)

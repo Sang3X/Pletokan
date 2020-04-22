@@ -23,7 +23,7 @@ public class UINetworkGameScoreEntry : MonoBehaviour
         if (textName != null)
             textName.text = ranking.playerName;
         if (textScore != null)
-            textScore.text = ranking.score.ToString("N0");
+            textScore.text = ranking.fixScore.ToString("N0");
         if (textKillCount != null)
             textKillCount.text = ranking.killCount.ToString("N0");
         if (textAssistCount != null)

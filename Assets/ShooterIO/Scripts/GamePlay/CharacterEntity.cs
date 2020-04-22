@@ -23,6 +23,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
 
     public float zoneScore;
     private float roundScore;
+    //public int zoneToInt;
 
     [Header("UI")]
     public Transform hpBarContainer;
@@ -382,6 +383,15 @@ public class CharacterEntity : BaseNetworkGameCharacter
         }
     }
 
+    public virtual float TotalZoneScore
+    {
+        get
+        {
+            var total = 1 + SumAddStats.addZoneScoreRate;
+            return total;
+        }
+    }
+
     public virtual int RewardExp
     {
         get { return GameplayManager.Singleton.GetRewardExp(level); }
@@ -477,7 +487,7 @@ public class CharacterEntity : BaseNetworkGameCharacter
         if (hpText != null)
             hpText.text = hp + "/" + TotalHp;
         if (ScoreZona != null)
-            ScoreZona.text = roundScore.ToString();
+            ScoreZona.text = zoneToInt.ToString();
         if (levelText != null)
             levelText.text = level.ToString("N0");
         UpdateAnimation();
@@ -631,10 +641,15 @@ public class CharacterEntity : BaseNetworkGameCharacter
         }
     }
 
-    protected virtual void TambahScoreZona()
+    [Server]
+    public void TambahScoreZona(CharacterEntity target)
     {
+
+        var gameplayManager = GameplayManager.Singleton;
         zoneScore += Time.deltaTime;
-        roundScore = Mathf.Round(zoneScore);
+        zoneToInt = Mathf.RoundToInt(zoneScore);
+        //score += target.zoneToInt;
+        score += Mathf.CeilToInt(target.zoneToInt);
     }
 
     protected virtual void UpdateMovements()
@@ -674,11 +689,12 @@ public class CharacterEntity : BaseNetworkGameCharacter
             isGround = true;
     }
 
-    protected virtual void OnTriggerStay(Collider coll)
+    public void OnTriggerStay(Collider coll)
     {
         if(coll.gameObject.tag == "Zone1")
         {
-            TambahScoreZona();
+            var gameplayManager = GameplayManager.Singleton;
+            TambahScoreZona(this);
             //print(zoneScore);
         }
     }

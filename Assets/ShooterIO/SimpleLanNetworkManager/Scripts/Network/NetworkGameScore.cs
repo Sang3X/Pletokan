@@ -10,4 +10,6 @@ public struct NetworkGameScore
     public int killCount;
     public int assistCount;
     public int dieCount;
+    public int zoneToInt;
+    public int fixScore;
 }
